@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;500;800&display=swap');
+*{
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.02em !important;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "space-bold";
+  src: url("/SpaceGrotesk-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "space-light";
+  src: url("/SpaceGrotesk-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "space-medium";
+  src: url("/SpaceGrotesk-Medium.ttf");
+  font-weight: 600;
+  
+}
+@font-face {
+  font-family: "space-regular";
+  src: url("/SpaceGrotesk-Regular.ttf");
+  font-weight: 500;
+  
+}
+
+.space-regular{
+  font-family: "space-regular";
+}
+.space-bold{
+  font-family: "space-bold";
+}
+.space-light{
+  font-family: "space-light";
+}
+.space-medium{
+  font-family: "space-medium";
+}
+
+
+
+
+
+.flow-hide {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.flow-hide-x-1 {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.flow-hide-x {
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.flow-hide-x::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+.flow-hide::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+.hide-scroll{
+    scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* Internet Explorer 10+ */
+}
+.hide-scroll::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+
+.z-1{
+  z-index: 1;
+}
+.z-4{
+  z-index: 4;
+}
+.z-10{
+  z-index: 10;
+}
+
+.desktop-nav-container{
+  background: rgba(255, 255, 255, 0.7);
+border: 1px solid rgba(0, 0, 0, 0.15);
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 24px;
+}
+
+.gradient-text{
+  background: linear-gradient(67.72deg, #3FE6DC 16.15%, #76D742 53.65%, #DBF53C 87.08%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.values-bg{
+  background: url('/values.png');
+  width: 100%;
+  height: 465px;
+  
+  background-color: #6AEDAB;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.project-bg{
+  background: url('/block.png');
+  width: 100%;
+  height: 497px;
+  border-radius: 15px;
+  background-color: #013A37;
+  background-repeat: repeat;
+}
+@media screen and (max-width: 768px) {
+  .values-bg{
+    height: 260px;
+    background-size: cover;
+  }
+  .project-bg{
+    height: 310px;
+    
+  }
+}
+.hero-bg{
+  background: url('/Grid.png');
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-color: #013A37;
+  
+  background-repeat: no-repeat;
+
+}
+
+.test-bg{
+  background: rgba(106, 237, 171, 0.1);
+  padding: 48px 40px 48px 40px;
+}
+
+@media screen and (max-width:768px) {
+  .hero-bg{
+    height: 434px;
+  }
+  .test-bg{
+    padding: 24px 21px 24px 21px;
+  }
+}
+.text-gradient{
+  background: linear-gradient(67.72deg, #3FE6DC 16.15%, #76D742 53.65%, #DBF53C 87.08%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+}
+.nav-index{
+  z-index: 9999 !important;
+}
+
+.blury{
+  
+width: 309.33px;
+height: 309.79px;
+background: #DBF53C;
+opacity: 0.1;
+filter: blur(60.5px);
+/* transform: rotate(39.01deg); */
+}
+.blury-1{
+  background: #40E7DB;
+opacity: 0.5;
+filter: blur(237px);
+width: 300px;
+height: 300px;
+border-radius: 200px;
+}
