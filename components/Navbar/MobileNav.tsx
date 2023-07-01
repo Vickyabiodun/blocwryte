@@ -8,6 +8,8 @@ const styles = {
     active: "",
     nonactive : ""
 }
+
+
 const MobileNav = ({present} : any ) => {
     const [show, setShow] = useState(false);
     const router = useRouter();
@@ -28,7 +30,9 @@ const MobileNav = ({present} : any ) => {
             
           />
         </div>
-      </div>
+          </div>
+          
+
      
       {show && (
           <div className="bg-primary w-full flex flex-col items-center z-100 transition-all duration-1000 delay-1000 ">

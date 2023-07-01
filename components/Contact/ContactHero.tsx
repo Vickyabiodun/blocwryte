@@ -55,7 +55,7 @@ const ContactHero = () => {
       try {
         const response = await axios.post(url, data, {headers:headers});
         
-        toast.success("Contact added successfully!");
+        toast.success("Thank you we would reach out to you soon!");
 
         setLoading(false);
         setEmail("");
