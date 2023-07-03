@@ -49,7 +49,7 @@ export const serviceData = [
   {
     title: "Technical Writing",
     story:
-      "We can help you develop mobile applications that are optimized for the latest technologies and platforms.",
+      "Trust us to transform your complex ideas into user-friendly documentation, enhancing your product/service communication and experience..",
     icon: technical,
   },
   {
@@ -64,5 +64,4 @@ export const serviceData = [
       "We can help you reach your target audience and drive engagement with a comprehensive blockchain marketing strategy that includes content creation, social media, and influencer outreach.",
     icon: blockM,
   },
- 
 ];

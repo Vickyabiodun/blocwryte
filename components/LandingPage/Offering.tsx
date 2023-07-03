@@ -42,7 +42,7 @@ const data = [
   {
     title: "Technical Writing",
     story:
-      "We can help you develop mobile applications that are optimized for the latest technologies and platforms.",
+      "Trust us to transform your complex ideas into user-friendly documentation, enhancing your product/service communication and experience.",
     image: six,
   },
 ];

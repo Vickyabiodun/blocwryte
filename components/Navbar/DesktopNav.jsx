@@ -19,7 +19,7 @@ const DesktopNav = ({ present }) => {
   };
   return (
     <div className="w-full fixed top-0 left-0 right-0  justify-center h-[100px] z-100 nav-index hidden md:flex ">
-      <div className="w-4/12 max-w-[480px] py-[6px] px-[16px] desktop-nav-container flex items-center justify-between mt-[40px]">
+      <div className="2xl:w-4/12 w-5/12 max-w-[520px] py-[6px] px-[16px] desktop-nav-container flex items-center justify-between mt-[40px]">
         <Image
           src={logo}
           alt="logo"
