@@ -7,7 +7,7 @@ import three from "../../assets/newsvg/three3.svg";
 import four from "../../assets/newsvg/four4.svg";
 import five from "../../assets/newsvg/five5.svg";
 import six from "../../assets/newsvg/six6.svg";
-
+import { useRouter } from "next/router";
 const data = [
   {
     title: "Graphic Design",
@@ -47,6 +47,7 @@ const data = [
   },
 ];
 const Offering = () => {
+  const router = useRouter();
   return (
     <div className="w-full flex flex-col bg-white py-[50px] md:py-[150px]">
       <ContainerLayout>
@@ -80,7 +81,7 @@ const Offering = () => {
             );
           })}
         </div>
-        <button className="text-base text-primary border-[2px] mt-[50px] font-bold tracking-tighter space-bold border-primary rounded-[500px] px-6 h-[59px]  flex items-center space-regular justify-center lg:mt-[100px] mx-auto hover:bg-primary hover:text-white transition-all duration-200">
+        <button className="text-base text-primary border-[2px] mt-[50px] font-bold tracking-tighter space-bold border-primary rounded-[500px] px-6 h-[59px]  flex items-center space-regular justify-center lg:mt-[100px] mx-auto hover:bg-primary hover:text-white transition-all duration-200" onClick={() => router.push("/contact-us")}>
           Learn about our process
         </button>
       </ContainerLayout>
