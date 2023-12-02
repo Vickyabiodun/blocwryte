@@ -70,7 +70,7 @@ const ContactHero = () => {
         
       } catch (error) {
         
-        toast.error("Please provide all the required fields")
+        toast.error("Sorry something happened")
         setLoading(false);
       }
     
@@ -93,7 +93,7 @@ const ContactHero = () => {
               </h1>
               <input
                 type="text"
-                className="placeholder:text-white placeholder:opacity-40 md:placeholder:text-[32px] placeholder:text-[20px] md:w-8/12 placeholder:font-semibold bg-inherit  outline-none w-full border-b border-b-slate-400 mt-2 md:mt-0 md:border-none space-medium text-white md:text-[32px] "
+                className="placeholder:text-white placeholder:opacity-40 md:placeholder:text-[32px] placeholder:text-[20px] md:w-8/12 placeholder:font-semibold bg-transparent focus:bg-transparent  outline-none w-full border-b border-b-slate-400  mt-2 md:mt-0 md:border-none space-medium text-white md:text-[32px] "
                 onChange={(e: any) => setName(e.target.value)}
                 value={name}
                 placeholder="Your name"
@@ -108,7 +108,7 @@ const ContactHero = () => {
               </h1>
               <input
                 type="text"
-                className="placeholder:text-white placeholder:opacity-40 placeholder:text-[32px] placeholder:font-semibold bg-inherit border-b border-opacity-40 border-b-white outline-none border-none text-white text-[32px] w-3/12  md:w-4/12 space-medium"
+                className="placeholder:text-white placeholder:opacity-40 placeholder:text-[32px] placeholder:font-semibold bg-transparent focus:bg-transparent border-b border-opacity-40 border-b-white outline-none border-none text-white text-[32px] w-3/12  md:w-4/12 space-medium"
                 placeholder="your@email.com"
                 onChange={(e: any) => setEmail(e.target.value)}
                 value={email}
@@ -128,7 +128,7 @@ const ContactHero = () => {
                 </h1>
                 <input
                   type="text"
-                  className="placeholder:text-white placeholder:opacity-40 md:placeholder:text-[32px] placeholder:font-semibold bg-inherit  outline-none  text-white  w-full border-b border-b-slate-400 mt-2 md:mt-0 md:border-none  md:w-8/12 space-medium text-base md:text-xl placeholder:text-xl"
+                  className="placeholder:text-white placeholder:opacity-40 md:placeholder:text-[32px] placeholder:font-semibold bg-transparent focus:bg-transparent  outline-none  text-white  w-full border-b border-b-slate-400  mt-2 md:mt-0 md:border-none  md:w-8/12 space-medium text-base md:text-xl placeholder:text-xl"
                   placeholder="Your@email.com"
                   onChange={(e: any) => setEmail(e.target.value)}
                   value={email}
@@ -144,7 +144,7 @@ const ContactHero = () => {
               </h1>
               <input
                 type="text"
-                className="placeholder:text-white placeholder:opacity-40 md:placeholder:text-[32px] placeholder:font-semibold bg-inherit  outline-none  text-white md:text-[32px] text-base placeholder:text-xl md:w-6/12 space-medium w-full border-b border-b-slate-400 mt-2 md:mt-0 md:border-none"
+                className="placeholder:text-white placeholder:opacity-40 md:placeholder:text-[32px] placeholder:font-semibold bg-transparent focus:bg-transparent  outline-none  text-white md:text-[32px] text-base placeholder:text-xl md:w-6/12 space-medium w-full border-b border-b-slate-400  mt-2 md:mt-0 md:border-none"
                 placeholder="your phone #"
                 onChange={(e: any) => setPhone(e.target.value)}
                 value={phone}
@@ -157,7 +157,7 @@ const ContactHero = () => {
               </h1>
               <input
                 type="text"
-                className="bg-inherit border-b border-opacity-40 border-b-white outline-none  text-white text-base md:text-[32px] "
+                className="bg-transparent focus:bg-transparent border-b border-opacity-40 border-b-white outline-none  text-white text-base md:text-[32px] "
                 onChange={(e: any) => setDesc(e.target.value)}
                 value={desc}
               />

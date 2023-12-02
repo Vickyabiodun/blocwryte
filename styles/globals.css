@@ -31,6 +31,12 @@
   font-weight: 500;
   
 }
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: transparent !important;
+    color: fieldtext !important;
+}
 
 .space-regular{
   font-family: "space-regular";
@@ -173,6 +179,15 @@ background-clip: text;
   z-index: 9999 !important;
 }
 
+
+input:-internal-autofill-selected {
+  background-color: #013A37 !important;
+}
+
+/* For Firefox */
+input:-moz-autofill {
+  background-color: #013A37 !important;
+}
 .blury{
   
 width: 309.33px;
